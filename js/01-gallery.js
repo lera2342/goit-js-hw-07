@@ -8,7 +8,7 @@ const gallery = document.querySelector('.gallery');
 const listGallery = galleryItems.map(({preview, original, description}) => `
     <li class="gallery__item">
         <a href="${original}" class="gallery__link">
-            <img src="${preview}" data-source="${original} alt="${description}" class="gallery__image">
+            <img src="${preview}" data-source="${original}" alt="${description}" class="gallery__image">
         </a></li>`).join(" ");
 
 gallery.insertAdjacentHTML('afterbegin', listGallery);
